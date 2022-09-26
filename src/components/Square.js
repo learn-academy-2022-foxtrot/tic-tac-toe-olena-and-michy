@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Square = (props) => {
+const Square = ({squares, index}) => {
   return (
     <div className="square"></div>
   )
