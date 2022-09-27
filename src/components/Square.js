@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Square = (props) => {
+const Square = ({square, index, handleGamePlay}) => {
 
   const handleClick = () => {
-    props.handleGamePlay(props.index)
+    handleGamePlay(index)
   }
   return (
     <>
-    <div className="square" onClick={handleClick}>{props.squares}</div>
+    <div className="square" onClick={handleClick}>{square}</div>
     </>
   )
 }
